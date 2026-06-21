@@ -123,8 +123,8 @@ This project is open source and available under the MIT License.
 ## 👤 Author
 
 **Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your Profile](https://linkedin.com/in/yourprofile)
+- GitHub: [@student-asma](https://github.com/student-asma)
+- LinkedIn: https://www.linkedin.com/in/asma-yousaf-b3a40534b/
 
 ## 🙏 Acknowledgments
 
