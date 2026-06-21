@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <h1>Photo Gallery</h1>
+        
+        <!-- Filter Buttons (BONUS) -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="city">City</button>
+            <button class="filter-btn" data-filter="tech">Tech</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid">
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500" alt="Mountain">
+                <div class="overlay">
+                    <button class="view-btn" onclick="openLightbox(this)">View</button>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="nature">
+                <img src="images/WhatsApp Image 2026-04-14 at 7.18.34 PM (2).jpeg" alt="Forest">
+                <div class="overlay">
+                    <button class="view-btn" onclick="openLightbox(this)">View</button>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="city">
+                <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=500" alt="City Night">
+                <div class="overlay">
+                    <button class="view-btn" onclick="openLightbox(this)">View</button>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="city">
+                <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=500" alt="Building">
+                <div class="overlay">
+                    <button class="view-btn" onclick="openLightbox(this)">View</button>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="tech">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500" alt="Tech">
+                <div class="overlay">
+                    <button class="view-btn" onclick="openLightbox(this)">View</button>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="tech">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500" alt="Code">
+                <div class="overlay">
+                    <button class="view-btn" onclick="openLightbox(this)">View</button>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="nature">
+                <img src="images/image2.jpeg">
+                <div class="overlay">
+                    <button class="view-btn" onclick="openLightbox(this)">View</button>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="city">
+                <img src="images/image1.jpeg">
+                <div class="overlay">
+                    <button class="view-btn" onclick="openLightbox(this)">View</button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="images/image3.jpeg">
+                <div class="overlay">
+                    <button class="view-btn" onclick="openLightbox(this)">View</button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="images/image4.jpeg">
+                <div class="overlay">
+                    <button class="view-btn" onclick="openLightbox(this)">View</button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="images/image5.jpeg">
+                <div class="overlay">
+                    <button class="view-btn" onclick="openLightbox(this)">View</button>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="images/image6.jpeg">
+                <div class="overlay">
+                    <button class="view-btn" onclick="openLightbox(this)">View</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <button class="nav-btn prev" onclick="previousImage()">❮</button>
+        <img id="lightbox-img" src="" alt="">
+        <button class="nav-btn next" onclick="nextImage()">❯</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
